@@ -32,7 +32,20 @@ button2.pack(expand = "True",anchor="center") #to apply the anchor need to add e
 
 #-------------------------------#
 
-textbox = tk.Entry (root) # 1. First parameter: where it will live, in this case in the window, root. 2. Second parameter: the text of the label)
-textbox.pack(expand = "True",anchor="center")
+
+def data_save():
+    data = textbox.get()
+    print(data)
+
+textbox = tk.Entry (root,font="Helvetica 15") # 1. First parameter: where it will live, in this case in the window, root. 2. Second parameter: the text of the label)
+textbox.pack(expand = "True",anchor="center" )
+
+button3 = tk.Button(root, text="click here", command= data_save, bg="gray", fg="white" )
+button3.pack(expand = "True",anchor="center" )
+
+#-------------------------------#
+
+
+
 
 root.mainloop()
