@@ -30,4 +30,9 @@ button1.pack(expand = "True", anchor="center")
 button2 = tk.Button(root, text= "click here", bg="gray",fg="white" ,command= alert_0)
 button2.pack(expand = "True",anchor="center") #to apply the anchor need to add expand as True to allow move the position
 
+#-------------------------------#
+
+textbox = tk.Entry (root) # 1. First parameter: where it will live, in this case in the window, root. 2. Second parameter: the text of the label)
+textbox.pack(expand = "True",anchor="center")
+
 root.mainloop()
